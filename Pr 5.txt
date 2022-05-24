@@ -1,0 +1,31 @@
+using System;
+namespace _1000_7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = Convert.ToInt32(Console.ReadLine());
+            int b = Convert.ToInt32(Console.ReadLine());
+            int s = 0;
+            if (a<b)
+            {
+                while (a<=b)
+                {
+                    s+=a;
+                    a+=1;
+                }
+            }
+            else 
+            {
+                while (b<=a)
+                {
+                    s+=b;
+                    b+=1;
+                }
+            }
+            Console.WriteLine(s);
+        }
+    }
+}
+

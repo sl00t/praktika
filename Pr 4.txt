@@ -1,0 +1,29 @@
+using System;
+namespace _1000_7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = Convert.ToInt32(Console.ReadLine());
+            int b = a;
+            int c = 0;
+            int d =0;
+            int e =0;
+            while (a>0)
+            {    
+                e = a%10;
+                a = a/10;
+                c+=1;
+            }    
+            while (b>0)
+            {    
+                d+= (b%10)*((c-1)*10);
+                b=b/10;
+            }
+            d+=e;
+            Console.WriteLine(d);
+        }
+    }
+}
+

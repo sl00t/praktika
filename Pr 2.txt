@@ -1,0 +1,21 @@
+namespace _1000_7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = Convert.ToInt32(Console.ReadLine());
+            int b = Convert.ToInt32(Console.ReadLine());
+            int c = Convert.ToInt32(Console.ReadLine());
+            int max = -100000;
+            if (a>max)
+                max=a;
+            if (b>max)
+                max=b;
+            if (c>max)
+                max=c;
+            Console.WriteLine(max);
+        }
+    }
+}
+

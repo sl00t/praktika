@@ -1,0 +1,35 @@
+using System;
+namespace _1000_7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] mas = new int[100];
+            int i = 0; 
+            int s = 0;
+            string test;
+            int count = 0;
+            do
+            {
+                test = Console.ReadLine();
+                if (test == "end") 
+                    break;
+                mas[i] = Convert.ToInt32(test);
+                ++i; 
+                ++count;
+            } 
+            while (true);
+            
+            for (int j = 0; j < 100; j++)
+            {
+                if (mas[j]%2!=0)
+                    s+=mas[j];
+                else 
+                    break;
+            }
+            Console.WriteLine(s);
+        }
+    }
+}
+
